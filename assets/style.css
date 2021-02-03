@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    width: 100%;
+    background-image: url("./images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header h3 {
+    font-size: 70px;
+    color: brown;
+}
+
+.timeline {
+    background-color: #f8f1f1;
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 1000px;
+    box-sizing: border-box;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: brown;
+
+}
+
+.timeline ul {
+    margin: 0;
+    padding: 0;
+}
+
+.timeline ul li {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.content {
+    padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd):before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: #2D667B;
+    border-radius: 50%;
+    box-shadow: #2D667B;
+}
+
+.timeline ul li:nth-child(even):before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: #2D667B;
+    border-radius: 50%;
+    box-shadow: #2D667B;
+}
+
+.timeline ul li h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: #222;
+}
+
+.timeline ul li p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.timeline ul li .time img {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    /*font-size: 14px;*/
+}
+
+.timeline ul li:nth-child(odd) .time {
+    position: absolute;
+    top: 12px;
+    left: -127px;
+    margin: 0;
+    padding: 8px 16px;
+    /* background: rgba(233, 33, 99, 1);
+     color: #fff;
+     border-radius: 18px;
+     box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);*/
+}
+
+.timeline ul li:nth-child(even) .time {
+    position: absolute;
+    top: 12px;
+    left: -127px;
+    margin: 0;
+    padding: 8px 16px;
+    /*background: rgba(233, 33, 99, 1);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);*/
+}
+
+.animado {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mostrarArriba {
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+    0% {
+        transform: translateY(60px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
